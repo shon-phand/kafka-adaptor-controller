@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: kafka-adaptor-controller
 repo: github.com/shon-phand/kafka-adaptor-controller.git
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: core.shon.io
+  group: api
+  kind: KafkaAdaptors
+  path: github.com/shon-phand/kafka-adaptor-controller.git/api/v1alpha1
+  version: v1alpha1
 version: "3"
